@@ -42,3 +42,24 @@ I am 26 years old, born in a small provincial town in the south of Russia. Most 
      return a * b;
     }
 ```
+
+---
+
+## Work experience
+
+- [CV](https://pollyolkh.github.io/rsschool-cv/cv)
+
+---
+
+## Education
+
+- Nevinnomyssk Chemical College
+  - Banking business
+- [FreeCodeCamp](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
+
+---
+
+## Languages
+
+- Russian - native speaker
+- English - between A2 and B1
