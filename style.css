@@ -4,12 +4,14 @@ body {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
+    min-width: 320px;
     margin: 0;
     padding: 0;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
     background-color: #d8d4d4;
+    color: rgb(54 48 55);
 }
 
 html {
@@ -20,9 +22,19 @@ html {
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: #4a8052;
+}
+
+a:hover {
+    color: rgb(54 48 55);
+}
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
+    min-height: 50px;
 }
 
 .nav-list {
@@ -47,13 +59,16 @@ html {
 }
 
 .my-photo {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 1em;
 }
 
 .main-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .section {
@@ -66,13 +81,19 @@ html {
     }
 }
 
+@media (max-width: 1440px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
 .section-item {
     position: relative;
     padding-left: 30px;
     list-style: none;
 }
 
-.section-item::before {
+.section-item:before {
     content: "";
     position: absolute;
     top: 8px;
@@ -83,8 +104,66 @@ html {
     border-radius: 50%;
 }
 
+.contact-item:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 1px;
+    right: 1px;
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 0%;
+}
 
+.contact-item:nth-child(1):before {
+    background-image: url(assets/phone-call.svg);
 
-a {
-    text-decoration: none;
+}
+
+.contact-item:nth-child(2)::before {
+    background-image: url(assets/loc.svg);
+}
+
+.contact-item:nth-child(3)::before {
+    background-image: url(assets/email.svg);
+}
+
+.contact-item:nth-child(4)::before {
+    background-image: url(assets/github.svg);
+}
+
+.contact-item:nth-child(5)::before {
+    background-image: url(assets/discord.svg);
+}
+
+.section {
+    width: calc(50% - 20px);
+    padding: 10px;
+    border-bottom: 1px solid rgb(54 48 55);
+}
+
+.profile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 45px;
+    border-bottom: 1px solid rgb(54 48 55);
+}
+
+.who {
+    text-transform: uppercase;
+}
+
+.lang,
+.education {
+    border-bottom: 0;
+}
+
+.footer {
+    display: block;
+    background-color: #979e98;
+
 }
