@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Josefin Sans', sans-serif;
     display: flex;
@@ -8,18 +16,41 @@ body {
     margin: 0;
     padding: 0;
     font-size: 18px;
-    font-weight: 400;
+
     line-height: 1.5;
     background-color: #d8d4d4;
     color: rgb(54 48 55);
 }
 
-html {
-    scroll-behavior: smooth;
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 50px;
 }
 
-* {
-    box-sizing: border-box;
+.header {
+    background-color: #979e98;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-link {
+    position: relative;
+    padding: 0 12px;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(42, 50, 42);
+}
+
+.nav-link:hover {
+    color: rgb(97, 126, 93);
 }
 
 a {
@@ -31,38 +62,8 @@ a:hover {
     color: rgb(54 48 55);
 }
 
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-    min-height: 50px;
-}
-
-.nav-list {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-
-}
-
-.nav-link {
-    padding: 0 20px;
-    line-height: 50px;
-    text-decoration: none;
-    font-size: 20px;
-    color: rgb(42, 50, 42);
-    transition: .3s;
-}
-
-.nav-link:hover {
-    color: rgb(97, 126, 93);
-}
-
-.my-photo {
-    width: 170px;
-    height: 170px;
-    object-fit: cover;
-    border-radius: 1em;
+.main {
+    margin-bottom: auto;
 }
 
 .main-container {
@@ -72,24 +73,65 @@ a:hover {
 }
 
 .section {
-    width: 50%;
+    width: calc(50% - 20px);
+    padding: 10px;
+    border-bottom: 1px solid rgb(54 48 55);
+    padding-bottom: 35px;
 }
 
-@media (max-width: 768px) {
-    .section {
-        width: 100%;
-    }
+.lang,
+.education {
+    border-bottom: 0;
 }
 
-@media (max-width: 1440px) {
-    .container {
-        padding: 0 20px;
-    }
+.section-title {
+
+}
+
+.profile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 45px;
+    border-bottom: 1px solid rgb(54 48 55);
+}
+
+.pre {
+    padding: 0;
+    margin: 0;
+}
+
+.profile-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+}
+
+.who {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.my-photo {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 1em;
 }
 
 .section-item {
     position: relative;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
     padding-left: 30px;
+}
+
+.section-list {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -139,31 +181,54 @@ a:hover {
     background-image: url(assets/discord.svg);
 }
 
-.section {
-    width: calc(50% - 20px);
-    padding: 10px;
-    border-bottom: 1px solid rgb(54 48 55);
-}
-
-.profile {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding: 45px;
-    border-bottom: 1px solid rgb(54 48 55);
-}
-
-.who {
-    text-transform: uppercase;
-}
-
-.lang,
-.education {
-    border-bottom: 0;
-}
-
 .footer {
-    display: block;
+    /* display: block; */
     background-color: #979e98;
+    padding: 20px;
+}
 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.footer-git {
+    color: rgb(42, 50, 42);
+}
+
+.year {}
+
+
+/* Media */
+
+@media (max-width: 850px) {
+    .section {
+        width: 100%;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education {
+        border-bottom: 1px solid rgb(54 48 55);
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* .nav {
+        display: flex;
+    } */
+}
+
+@media (max-width: 1440px) {
+    .container {
+        padding: 0 20px;
+    }
 }
