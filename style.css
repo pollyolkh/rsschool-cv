@@ -84,10 +84,6 @@ a:hover {
     border-bottom: 0;
 }
 
-.section-title {
-
-}
-
 .profile {
     display: flex;
     justify-content: space-around;
@@ -197,8 +193,6 @@ a:hover {
 .footer-git {
     color: rgb(42, 50, 42);
 }
-
-.year {}
 
 
 /* Media */
