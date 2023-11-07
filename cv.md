@@ -57,11 +57,11 @@ function bestSpot() {
 ## Work experience
 
 -   [CV](https://pollyolkh.github.io/rsschool-cv/cv)
--   [Tic-Tac-Toe] (https://rolling-scopes-school.github.io/pollyolkh-JSFEPRESCHOOL2023Q2/random-game/)
--   [CSSMemeSlider] (https://pollyolkh.github.io/cssMemeSlider/cssMemeSlider/)
--   [AudioPlayer] (https://rolling-scopes-school.github.io/pollyolkh-JSFEPRESCHOOL2023Q2/audio-player/)
--   [ImageGallery] (https://rolling-scopes-school.github.io/pollyolkh-JSFEPRESCHOOL2023Q2/image-galery/)
--   [Library] (https://rolling-scopes-school.github.io/pollyolkh-JSFEPRESCHOOL2023Q2/library/)
+-   [Tic-Tac-Toe](https://rolling-scopes-school.github.io/pollyolkh-JSFEPRESCHOOL2023Q2/random-game/)
+-   [CSSMemeSlider](https://pollyolkh.github.io/cssMemeSlider/cssMemeSlider/)
+-   [AudioPlayer](https://rolling-scopes-school.github.io/pollyolkh-JSFEPRESCHOOL2023Q2/audio-player/)
+-   [ImageGallery](https://rolling-scopes-school.github.io/pollyolkh-JSFEPRESCHOOL2023Q2/image-galery/)
+-   [Library](https://rolling-scopes-school.github.io/pollyolkh-JSFEPRESCHOOL2023Q2/library/)
 
 ---
 
