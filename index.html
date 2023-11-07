@@ -31,7 +31,7 @@
     <main class="main">
         <div class="container main-container">
             <section class="section profile" id="profile">
-                <img class="my-photo" src="assets/me.JPG" alt="my photo">
+                <img class="my-photo" src="assets/me.jpg" alt="my photo">
                 <div class="profile-title">
                     <h1 class="hello">Hello!
                         <br>
@@ -44,7 +44,7 @@
                 <h2 class="section-title">Contacts</h2>
                 <ul class="section-list">
                     <li class="section-item contact-item"><b>Phone:</b> +7 705 289 92 69</li>
-                    <li class="section-item contact-item"><b>Location:</b> Astana, Kazakhstan</li>
+                    <li class="section-item contact-item"><b>Location:</b> Belgrad, Serbia</li>
                     <li class="section-item contact-item"><b>Email:</b> pollyolkh@gmail.com</li>
                     <li class="section-item contact-item"><b>Git:</b> <a href="https://github.com/pollyolkh"
                             target="_blank">pollyolkh</a></li>
@@ -54,14 +54,13 @@
             <section class="section summary" id="summary">
                 <h2 class="section-title">Summary</h2>
                 <p>
-                    I am 26 years old, born in a small provincial town in the south of
-                    Russia. Most of the places where I worked were very boring and didn't
-                    allow me to develop. I quit my last job two years ago and devoted
-                    myself to photography. After a while I realized that I didn't want to
-                    make money from photography, I wanted to leave it as a hobby. Now I am
-                    in emigration, so I started looking for a sphere to earn money
-                    remotely. I am a very creative person, so the prospect of becoming a
-                    front-end developer appealed to me!
+                    I am 27 years old, born in a small provincial town in the south of Russia. Most of the places where
+                    I worked were very boring and didn't allow me to develop. I quit my last job two years ago and
+                    devoted myself to photography. After a while I realized that I didn't want to make money from
+                    photography, I wanted to leave it as a hobby. Now I am in emigration, so I started looking for a
+                    sphere to earn money remotely. I like playing video games and I listen to music all the time. I am a
+                    very creative person, like to explore, so the prospect of becoming a front-end developer appealed to
+                    me!
                 </p>
             </section>
             <section class="section strengths" id="strengths">
@@ -79,8 +78,10 @@
                 <h2 class="section-title">Skills</h2>
                 <ul class="section-list">
                     <li class="section-item">HTML</li>
-                    <li class="section-item">CSS (Bootstrap)</li>
+                    <li class="section-item">CSS</li>
+                    <li class="section-item">JavaScript (basic level)</li>
                     <li class="section-item">Git/GitHub</li>
+                    <li class="section-item">Bootstrap</li>
                     <li class="section-item">Photoshop, Lightroom</li>
                 </ul>
             </section>
@@ -88,9 +89,17 @@
                 <h2 class="section-title">Code Examples</h2>
                 <pre>
                     <code class="pre">
-        function multiply(a, b){
-            return a * b;
-            };
+function bestSpot() {
+    if (selectedDifficulty === "easy") {
+        // Easy level: selecting a random available cell
+        const availableSpots = emptySquares();
+        return availableSpots[Math.floor(Math.random()
+         * availableSpots.length)];
+    } else {
+        // Complex level: using the minimax algorithm
+        return minimax(origBoard, aiPlayer).index;
+    }
+}
                     </code>
                 </pre>
             </section>
@@ -98,6 +107,25 @@
                 <h2 class="section-title">Work experience</h2>
                 <ul class="section-list">
                     <li class="section-item"><a href="https://pollyolkh.github.io/rsschool-cv/cv" target="_blank">CV</a>
+                    </li>
+                    <li class="section-item"><a
+                            href="https://rolling-scopes-school.github.io/pollyolkh-JSFEPRESCHOOL2023Q2/random-game/"
+                            target="_blank">Tic-Tac-Toe</a>
+                    </li>
+                    <li class="section-item"><a href="https://pollyolkh.github.io/cssMemeSlider/cssMemeSlider/"
+                            target="_blank">CSSMemeSlider</a>
+                    </li>
+                    <li class="section-item"><a
+                            href="https://rolling-scopes-school.github.io/pollyolkh-JSFEPRESCHOOL2023Q2/audio-player/"
+                            target="_blank">AudioPlayer</a>
+                    </li>
+                    <li class="section-item"><a
+                            href="https://rolling-scopes-school.github.io/pollyolkh-JSFEPRESCHOOL2023Q2/image-galery/"
+                            target="_blank">ImageGallery</a>
+                    </li>
+                    <li class="section-item"><a
+                            href="https://rolling-scopes-school.github.io/pollyolkh-JSFEPRESCHOOL2023Q2/library/"
+                            target="_blank">Library</a>
                     </li>
                 </ul>
             </section>
@@ -111,6 +139,7 @@
                     </li>
                     <li class="section-item"><a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/"
                             target="_blank">FreeCodeCamp</a></li>
+                    <li class="section-item">Rolling Scopes School (Stage 0)</li>
                 </ul>
             </section>
             <section class="section lang" id="lang">
